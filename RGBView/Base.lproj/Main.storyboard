@@ -85,44 +85,35 @@
                                                 <rect key="frame" x="-2" y="0.0" width="257" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemRedColor"/>
                                                 <connections>
-                                                    <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="YSb-kZ-FY3"/>
+                                                    <action selector="sliderChange" destination="BYZ-38-t0r" eventType="valueChanged" id="3G7-6j-QwW"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="qjh-fu-4pv">
                                                 <rect key="frame" x="-2" y="42" width="257" height="31"/>
                                                 <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
                                                 <connections>
-                                                    <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="8Ao-Pr-Bg9"/>
+                                                    <action selector="sliderChange" destination="BYZ-38-t0r" eventType="valueChanged" id="O36-Tf-S4V"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.75" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="FaX-EF-7HC">
                                                 <rect key="frame" x="-2" y="84" width="257" height="31"/>
                                                 <connections>
-                                                    <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="Vim-zZ-bWQ"/>
+                                                    <action selector="sliderChange" destination="BYZ-38-t0r" eventType="valueChanged" id="6uY-Iq-riN"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egv-ws-q0N">
-                                <rect key="frame" x="16" y="577.5" width="343" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.14211790186667489" green="0.29647090467996817" blue="0.5760962034239987" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="IbL-qV-7Kr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="3Sl-ax-kew"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IbL-qV-7Kr" secondAttribute="trailing" constant="16" id="MP6-Ew-gbh"/>
-                            <constraint firstItem="egv-ws-q0N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="QHN-9z-qpw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="egv-ws-q0N" secondAttribute="bottom" constant="69" id="ZbO-Ni-fbc"/>
                             <constraint firstItem="LAC-qd-7r8" firstAttribute="top" secondItem="IbL-qV-7Kr" secondAttribute="bottom" constant="53" id="f7g-rF-YuP"/>
                             <constraint firstItem="LAC-qd-7r8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kRe-t4-j9O"/>
                             <constraint firstAttribute="trailing" secondItem="LAC-qd-7r8" secondAttribute="trailing" constant="16" id="kq6-Ie-FAn"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="egv-ws-q0N" secondAttribute="trailing" constant="16" id="oZr-na-k9b"/>
                             <constraint firstItem="IbL-qV-7Kr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="34" id="zfq-vN-vjG"/>
                         </constraints>
                     </view>
@@ -132,7 +123,6 @@
                         <outlet property="colorizedView" destination="IbL-qV-7Kr" id="qmY-XP-6rX"/>
                         <outlet property="greenNumber" destination="38K-Ak-qbb" id="iHe-j9-2up"/>
                         <outlet property="greenSlider" destination="qjh-fu-4pv" id="0X2-JF-qT1"/>
-                        <outlet property="hudFilmSpizdili" destination="egv-ws-q0N" id="3VC-A9-ZRP"/>
                         <outlet property="redNumber" destination="Csb-i8-iZt" id="CZI-7v-2f7"/>
                         <outlet property="redSlider" destination="ypY-0D-WXA" id="FGN-Nq-Baf"/>
                     </connections>
